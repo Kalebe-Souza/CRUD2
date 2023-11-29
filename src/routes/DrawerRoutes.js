@@ -17,25 +17,25 @@ export default function DrawerRoutes() {
       initialRouteName='Candidatos'
       screenOptions={{
         drawerStyle: {
-          backgroundColor: 'black',
+          backgroundColor: 'white',
         },
         drawerLabelStyle: {
-          color: 'white',
+          color: 'red',
         },
         headerStyle: {
-          backgroundColor: 'gray',
+          backgroundColor: 'white',
         },
-        headerTintColor: 'white',
+        headerTintColor: 'red',
         headerTitleStyle: {
           fontWeight: 'bold',
         },
       }}
       >
-      <Drawer.Screen name='Candidatos' component={StackCandidatos} />
-      <Drawer.Screen name='Contursos' component={StackConcursos} />
-      <Drawer.Screen name='Vagas' component={StackVagas} />
-      <Drawer.Screen name='Locais de Prova' component={StackLocais} />
-      <Drawer.Screen name='Resultados dos Candidatos' component={StackResultados} />
+      <Drawer.Screen name='Pacientes' component={StackCandidatos} />
+      <Drawer.Screen name='Exames' component={StackConcursos} />
+      <Drawer.Screen name='Marcações' component={StackVagas} />
+      <Drawer.Screen name='Hospitais' component={StackLocais} />
+      <Drawer.Screen name='Resultados' component={StackResultados} />
     </Drawer.Navigator>
   );
 };
